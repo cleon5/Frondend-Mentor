@@ -42,6 +42,7 @@
     justify-content: center;
     margin: 50px;
     width: 85%;
+    height: fit-content;
 }
 .BotonSeccion{
     border-bottom-right-radius: 30px 30px;
@@ -69,6 +70,7 @@
     justify-content: center;
     margin: 50px;
     width: 40%;
+    height: fit-content;
 }
 .Numero{
     color: var(--VeryDarkCyan);

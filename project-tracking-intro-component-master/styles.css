@@ -1,0 +1,246 @@
+:root {
+  --Red: hsl(0, 100%, 68%);
+
+  --VeryDarkBlue: hsl(230, 29%, 20%);
+  --DarkGrayishBlue: hsl(230, 11%, 40%);
+  --GrayishBlue: hsl(231, 7%, 65%);
+  --LightGrayishBlue: hsl(207, 33%, 95%);
+  --typografia: ;
+
+  /*
+  font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+  */
+}
+
+.Navbar .fa-bars,
+.Navbar .fa-times {
+  font-size: 48px;
+  pointer-events: none;
+  display: none;
+}
+
+.Navbar input[type="checkbox"] {
+  opacity: 0;
+  display: none;
+}
+
+nav {
+  display: flex;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+.Navbar {
+  display: flex;
+  width: 100%;
+  padding-top: 2vh;
+  justify-content: space-between;
+}
+.links {
+  text-transform: uppercase;
+  display: flex;
+  padding-right: 3vw;
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--VeryDarkBlue);
+  font-weight: 900;
+}
+
+.links p {
+  transition: all 0.7s ease-in-out;
+  padding-inline: 2vw;
+}
+
+.links p:hover {
+  transition: all 0.7s ease-in-out;
+  text-decoration: underline;
+  color: var(--GrayishBlue);
+}
+.logo {
+  justify-self: start;
+  align-self: flex-start;
+  padding-left: 10%;
+}
+.Page {
+  margin-top: 10vh;
+  color: var(--VeryDarkBlue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subtitulo {
+  color: var(--GrayishBlue);
+}
+.flex {
+  display: flex;
+  text-transform: uppercase;
+}
+.Textbt {
+  color: var(--GrayishBlue);
+}
+.new {
+  background-color: var(--VeryDarkBlue);
+  color: white;
+  padding: 1px;
+  padding-inline: 13px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-top: -4%;
+}
+h3 {
+  font-family: "Barlow", sans-serif;
+  padding-right: 20vw;
+  color: var(--GrayishBlue);
+  font-size: 1.3vw;
+}
+
+.boton {
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: var(--Red);
+  color: white;
+  padding: 5px 35px;
+  border-radius: 5px;
+  border-color: var(--Red);
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.boton:hover {
+  background-color: rgb(221, 103, 103);
+  border-color: rgb(221, 103, 103);
+}
+.Izquierda {
+  justify-content: center;
+  width: 50%;
+  padding-left: 10%;
+}
+.Derecha {
+  align-items: center;
+  width: 50%;
+}
+.img {
+  clip-path: inset(0px 300px 0px 0px);
+  position: relative;
+  left: 10%;
+}
+
+@media screen and (max-width: 475px) {
+  .Navbar input[type="checkbox"],
+  .Navbar .fa-bars,
+  .Navbar .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    display: block;
+  }
+
+  .Navbar .fa-bars,
+  .Navbar .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+
+  .Navbar input[type="checkbox"] {
+    opacity: 0;
+    display: block;
+  }
+
+  .Navbar {
+    color: white;
+    position: relative;
+    min-height: 48px;
+  }
+
+  .Navbar nav {
+    border: 10px;
+    width: 300px;
+    box-shadow:
+    inset 0 0em 0em rgba(0, 0, 0, 0.596),
+          0 0  0 0px rgb(25, 46, 59),
+          0.2em 0.1em .2em .1em rgba(0, 0, 0, 0.849);
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    display: none;
+
+    
+  }
+
+  .logo {
+    justify-self: start;
+    align-self: flex-start;
+    padding-left: 0%;
+  }
+  .Navbar input:checked ~ nav {
+    display: block;
+  }
+
+  .Navbar input:checked ~ .fa-bars {
+    display: none;
+  }
+
+  .Navbar input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+  .links {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+  .links p {
+    transition: all 0.7s ease-in-out;
+
+    padding-inline: 2vw;
+  }
+  .Page {
+    margin-top: 10vh;
+    color: var(--VeryDarkBlue);
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .Izquierda {
+    justify-content: center;
+    width: 100%;
+    padding-left: 10%;
+  }
+  .Derecha {
+    align-items: center;
+    width: 100%;
+  }
+  .img {
+    clip-path: inset(0px 00px 0px 0px);
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+  h1 {
+    font-size: 12vw;
+    margin-top: -4%;
+  }
+  h3 {
+    padding-right: 0vw;
+    color: var(--VeryDarkBlue);
+    font-size: 7vw;
+  }
+}
